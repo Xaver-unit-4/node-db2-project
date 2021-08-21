@@ -5,7 +5,10 @@
   "scripts": {
     "server": "nodemon index.js",
     "test": "cross-env NODE_ENV=testing jest --watch --verbose --runInBand",
-    "mig late": "knex migrate:latest",
+    "mig-late": "knex migrate:latest",
+    "mig-back": "knex migrate:rollback",
+    "mig-up": "knex migrate:up",
+    "mig-down": "knex migrate:down",
     "seed": "knex seed:run"
   },
   "devDependencies": {
