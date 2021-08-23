@@ -5,7 +5,7 @@ exports.up = function (knex) {
     table.string('vin', 17).notNullable().unique()
     table.string('make', 50).notNullable()
     table.string('model', 50).notNullable()
-    table.integer('milage').unsigned().notNullable()
+    table.integer('mileage').unsigned().notNullable()
     table.string('title', 50).defaultTo('unknown')
     table.string('transmission', 50).defaultTo('unknown')
   })
